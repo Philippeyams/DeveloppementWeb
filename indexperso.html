@@ -1,75 +1,96 @@
-<!DOCTYPE html>  
-<html lang="fr">  
-<head>  
-    
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Mon Portfolio</title>  
-    <link rel="stylesheet" href="styles.css">  
-</head>  
-<body>  
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de YAMEOGO Philippe, doctorant en modélisation hydrologique et climatique, spécialisé dans la gestion de l'eau.">
+    <meta name="author" content="YAMEOGO Philippe">
+    <title>Portfolio - YAMEOGO Philippe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<header>  
-    <h1>Mon Nom</h1>  
-    <p>Développeur / Designer / Photographe</p>  
-    <nav>  
-        <a href="#about">À propos</a>  
-        <a href="#projects">Projets</a>  
-        <a href="#skills">Compétences</a>  
-        <a href="#contact">Contact</a>  
-    </nav>  
-</header>  
+<header class="hero-section">
+    <div class="hero-content">
+        <h1 class="animate-fade-in">YAMEOGO Philippe</h1>
+        <p class="subtitle animate-slide-in">PhD Student | Hydraulic Engineer</p>
+        <nav>
+            <a href="#about" class="nav-link">À propos</a>
+            <a href="#projects" class="nav-link">Projets</a>
+            <a href="#skills" class="nav-link">Compétences</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
 
-<section id="about">  
-    <h2>À propos de moi</h2>  
-    <p>Je suis un passionné de technologie, avec une forte expérience dans ...</p>  
-    <img src="mon_image.jpg" alt="Image de moi" />  
-</section>  
+<section id="about" class="section">
+    <h2 class="section-title">À propos de moi</h2>
+    <div class="about-container">
+        <img src="PhotoPhil.jpg" alt="Photo de Philippe YAMEOGO" class="profile-pic">
+        <div class="about-text">
+            <p>
+                Passionné par les métiers de l'eau et la modélisation numérique, je suis doctorant en modélisation hydrologique et climatique à l'UQAM.  
+                Je combine mon expertise en ingénierie hydraulique et ma maîtrise des outils numériques pour relever les défis liés à la gestion de l’eau dans un contexte de changements climatiques.
+            </p>
+            <p>Bienvenue dans mon univers, où science et innovation se rencontrent pour bâtir des solutions durables.</p>
+        </div>
+    </div>
+</section>
 
-<section id="projects">  
-    <h2>Mes Projets</h2>  
-    <div class="project">  
-        <img src="projet1.jpg" alt="Projet 1">  
-        <h3>Titre du Projet 1</h3>  
-        <p>Description du projet...</p>  
-    </div>  
-    <div class="project">  
-        <img src="projet2.jpg" alt="Projet 2">  
-        <h3>Titre du Projet 2</h3>  
-        <p>Description du projet...</p>  
-    </div>  
-</section>  
+<section id="projects" class="section">
+    <h2 class="section-title">Mes Projets</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="projet1.jpg" alt="Modélisation des inondations" class="project-img">
+            <h3>Modélisation des inondations urbaines</h3>
+            <p>Simulation des crues maximales pour améliorer la résilience des infrastructures urbaines face aux inondations.</p>
+        </div>
+        <div class="project-card">
+            <img src="projet2.jpg" alt="Hydrologie des crues au Québec" class="project-img">
+            <h3>Hydrologie des crues au Québec</h3>
+            <p>Analyse des impacts de la fonte du manteau neigeux sur les crues maximales probables en hiver-printemps.</p>
+        </div>
+    </div>
+</section>
 
-<section id="skills">  
-    <h2>Mes Compétences</h2>  
-    <ul>  
-        <li>HTML/CSS</li>  
-        <li>JavaScript</li>  
-        <li>Design Graphique</li>  
-        <li>Photographie</li>  
-    </ul>  
-</section>  
+<section id="skills" class="section">
+    <h2 class="section-title">Mes Compétences</h2>
+    <div class="skills-grid">
+        <div class="skill-item">Modélisation hydrodynamique</div>
+        <div class="skill-item">Python et Jupyter Notebook</div>
+        <div class="skill-item">Systèmes d'Information Géographique (SIG)</div>
+        <div class="skill-item">Hydraulique fluviale</div>
+        <div class="skill-item">Ouvrages hydrauliques</div>
+        <div class="skill-item">Modélisation climatique</div>
+    </div>
+</section>
 
-<section id="contact">  
-    <h2>Contactez-moi</h2>  
-    <p>Email : monemail@example.com</p>  
-    <form>  
-        <label for="name">Nom :</label>  
-        <input type="text" id="name" required>  
+<section id="contact" class="section">
+    <h2 class="section-title">Contactez-moi</h2>
+    <p>Envoyez-moi un message pour toute collaboration ou question !</p>
+    <form class="contact-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" required>
         
-        <label for="email">Email :</label>  
-        <input type="email" id="email" required>  
+        <label for="email">Email :</label>
+        <input type="email" id="email" required>
         
-        <label for="message">Message :</label>  
-        <textarea id="message" required></textarea>  
+        <label for="message">Message :</label>
+        <textarea id="message" required></textarea>
         
-        <button type="submit">Envoyer</button>  
-    </form>  
-</section>  
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</section>
 
-<footer>  
-    <p>© 2025 Mon Nom - Tous droits réservés.</p>  
-</footer>  
+<footer>
+    <p>© 2025 YAMEOGO Philippe - Tous droits réservés.</p>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/philippe-yameogo" target="_blank">LinkedIn</a>
+        <a href="https://researchgate.net/profile/philippe-yameogo" target="_blank">ResearchGate</a>
+    </div>
+</footer>
 
-</body>  
+</body>
 </html>
